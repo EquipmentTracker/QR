@@ -34,7 +34,7 @@
         params.set("lon", lon);
 
         const url = `https://script.google.com/macros/s/AKfycbxFV7ZFVPY7M0bDU8jXWzm867PVw0wnnRUfXKEdFtG3lsjaIdXDyXkBK8BGPqny_l5I/exec?${params.toString()}`;
-        window.location.href = url;
+        window.top.location.href = url;
       },
       (err) => {
         console.error("❌ Geolocation error:", err);
